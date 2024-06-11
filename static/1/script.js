@@ -25,7 +25,7 @@ function createModal() {
   modal.appendChild(modalContent);
   document.body.appendChild(modal);
 
-  // Обработчик клика на кнопку закрытия
+  // Обработчик клика на кнопку закрыти
   closeButton.addEventListener("click", () => {
     document.body.removeChild(overlay);
     document.body.removeChild(modal);
